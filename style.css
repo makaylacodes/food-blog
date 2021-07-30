@@ -80,6 +80,7 @@ header{
 
 .navbar-nav a:hover{
     opacity: 0.7;
+    color: rgb(106, 167, 167);
 }
 
 .banner{
