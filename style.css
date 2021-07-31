@@ -364,6 +364,42 @@ header{
     font-family: var(--Patrick);
 }
 
+/*onepot*/
+
+.onepot {
+    background: #f0bebe;
+    padding: 4.5rem 0;
+}
+
+.onepot-text{
+    
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.onepot-title h2{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.onepot p{
+    color: black;
+}
+
+.onepot-text p{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+}
+
 
 /* blog */
 
@@ -586,6 +622,16 @@ footer{
         column-gap: 1rem;
         align-items: center;
     }
+    .onepot-content img{
+        width: 150px;
+        height: 150px;
+    }
+    .onepot-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
 
 }
 
@@ -630,6 +676,16 @@ footer{
         column-gap: 1rem;
         align-items: center;
     }
+    .onepot-content img{
+        width: 350px;
+        height: 350px;
+    }
+    .onepot-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
 
     
 }
@@ -667,6 +723,17 @@ footer{
         column-gap: 1rem;
         align-items: center;
     }
+    .onepot-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .onepot-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
     
 }
 
@@ -690,6 +757,18 @@ footer{
         
     }
     .bokkuembap-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+
+    .onepot-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .onepot-content {
         display:flexbox;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1rem;
