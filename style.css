@@ -1,10 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 :root{
     --Playfair: 'Playfair Display', serif;
     --Quicksand: 'Quicksand', sans-serif;
     --Roboto: 'Roboto', sans-serif;
+    --Patrick: 'Patrick Hand', cursive;
     --dark: #3c393d;
     --exDark: #2b2b2b;
 
@@ -35,12 +37,11 @@ img{
 /* header */
 header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.4), 
-    rgba(0,0,0,0.4)), url(images/cherry.gif)
-    center/cover no-repeat fixed;
+    background: linear-gradient(rgba(187, 110, 110, 0.4), 
+    rgba(184, 58, 58, 0.4)), url(images/cherrycity.gif)
+    center/cover no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
 
 }
 
@@ -142,9 +143,15 @@ header{
     outline: 0;
     cursor: pointer;
 }
+/* home */
+.home{
+    background: #f0bebe;
+    padding: 4.5rem 0 ;
+}
 
-/* design*/
-.design{
+
+/* recipies*/
+.recipies{
     background: #f0bebe;
     padding: 4.5rem 0 ;
 }
@@ -157,6 +164,7 @@ header{
 .title h2{
     font-family: var(--Playfair);
     font-size: 2.4rem;
+    color: black;
 
 }
 
@@ -166,21 +174,21 @@ header{
     font-weight: bold;
 }
 
-.design-content{
-    margin: 2rem 0;
+.recipies-content{
+    margin: .5rem 0;
 }
 
-.design-item{
+.recipies-item{
     cursor: pointer;
     margin: 1.5rem 0;
 }
 
-.design-img{
+.recipies-img{
     position: relative;
     overflow: hidden;
 }
 
-.design-img::after{
+.recipies-img::after{
     position: absolute;
     content: "";
     top: 0;
@@ -190,16 +198,16 @@ header{
     background: rgba(0,0,0,0.3);
 }
 
-.design-img img{
+.recipies-img img{
     transition: all 0.5 ease;
 }
 
-.design-item:hover img{
+.recipies-item:hover img{
     transform: scale(1.2);
 
 }
 
-.design-img span:first-of-type{
+.recipies-img span:first-of-type{
     position: absolute;
     z-index: 1;
     top: 10px;
@@ -209,7 +217,7 @@ header{
     padding: 0.25rem 1rem;
 }
 
-.design-img span:last-of-type{
+.recipies-img span:last-of-type{
     position: absolute;
     z-index: 1;
     bottom: 10px;
@@ -220,19 +228,140 @@ header{
 
 }
 
-.design-title{
-    padding: 1rem;
+.recipies-title{
+    padding: .5rem;
     font-size: 1.2rem;
     text-align: center;
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
 }
 
-.design-title a{
+.recipies-title a{
     color: var(--dark);
     text-decoration: none;
+    display: inline-block;
     text-transform: capitalize;
-    font-family: var(--Playfair);
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+
+   /* font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background:#df5d5d;
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease; */
+}
+
+
+/* kimchi */
+.kimchi {
+    background: #f0bebe;
+    padding: 4.5rem 0;
+}
+.kimchi p{
+    color: black;
+}
+
+.kimchi-text{
+    
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.kimchi-title h2{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.kimchi-text p{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+}
+
+/* samgyeopsal */
+.samgyeopsal {
+    background: #f0bebe;
+    padding: 4.5rem 0;
+}
+
+.samgyeopsal-text{
+    
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.samgyeopsal-title h2{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.samgyeopsal p{
+    color: black;
+}
+
+.samgyeopsal-text p{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+}
+
+
+/*bokkeumbap*/
+.bokkeumbap {
+    background: #f0bebe;
+    padding: 4.5rem 0;
+}
+
+.bokkeumbap-text{
+    
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.bokkeumbap-title h2{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.bokkeumbap p{
+    color: black;
+}
+
+.bokkuembap-text p{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
 }
 
 
@@ -419,7 +548,7 @@ footer{
 
 /* media queries */
 
-@media screen and (min-width: 540){
+@media screen and (min-width: 340){
     .navbar-nav a{
         padding-right: 1.2rem;
         padding-left: 1.2rem;
@@ -433,6 +562,31 @@ footer{
         margin-left: auto ;
         margin-right: auto;
     }
+    .kimchi-content img{
+        width: 250px;
+        height: 350px;
+    }
+    .kimchi-content{
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .samgyeopsal-content img{
+        width: 250px;
+        height: 350px;
+    }
+    .bokkuembap-content img{
+        width: 150px;
+        height: 150px;
+    }
+    .bokkuembap-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+
 }
 
 @media screen and (min-width:768px) {
@@ -444,12 +598,12 @@ footer{
     .search-input{
         padding: 0.8rem 0;
     }
-    .design-content{
+    .recipies-content{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 2rem; 
     }
-    .design-item{
+    .recipies-item{
         margin: 0;
     }
     .blog-content{
@@ -457,6 +611,26 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
+    .kimchi-content img{
+        width: 250px;
+        height: 350px;
+        
+    }
+    .samgyeopsal-content img{
+        width: 250px;
+        height: 350px;
+    }
+    .bokkeumbap-content img{
+        width: 350px;
+        height: 350px;
+    }
+    .bokkuembap-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+
     
 }
 
@@ -469,6 +643,28 @@ footer{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 3rem;
+        align-items: top;
+    }
+    
+    .kimchi-content img{
+        width: 250px;
+        height: 350px;
+        
+    }
+    .samgyeopsal-content img{
+        width: 650px;
+        height: 550px;
+        
+    }
+    .bokkeumbap-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .bokkuembap-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
         align-items: center;
     }
     
@@ -476,7 +672,27 @@ footer{
 
 @media screen and (min-width: 1200px){
 
-    .design-content{
+    .recipies-content{
         grid-template-columns: repeat(3, 1fr);
+    }
+    .kimchi-content img{
+        width: 250px;
+        height: 350px;
+    }
+    .samgyeopsal-content img{
+        width: 750px;
+        height: 550px;
+        
+    }
+    .bokkeumbap-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .bokkuembap-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
     }
 }
