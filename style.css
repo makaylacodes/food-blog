@@ -400,6 +400,51 @@ header{
     font-family: var(--Patrick);
 }
 
+/* paneer */
+.paneer {
+    background: #f0bebe;
+    padding: 4.5rem 0;
+}
+
+.paneer-text{
+    
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.paneer-title h2{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.paneer-title h4{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.paneer p{
+    color: black;
+}
+
+.paneer-text p{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+}
+
 
 /* blog */
 
@@ -632,6 +677,16 @@ footer{
         column-gap: 1rem;
         align-items: center;
     }
+    .paneer-content img{
+        width: 150px;
+        height: 150px;
+    }
+    .paneer-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
 
 }
 
@@ -686,6 +741,16 @@ footer{
         column-gap: 1rem;
         align-items: center;
     }
+    .paneer-content img{
+        width: 350px;
+        height: 350px;
+    }
+    .paneer-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
 
     
 }
@@ -734,6 +799,17 @@ footer{
         column-gap: 1rem;
         align-items: center;
     }
+    .paneer-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .paneer-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
     
 }
 
@@ -769,6 +845,17 @@ footer{
         
     }
     .onepot-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .paneer-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .paneer-content {
         display:flexbox;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1rem;
