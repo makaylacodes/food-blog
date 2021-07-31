@@ -32,6 +32,8 @@ img{
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 1.2rem;
+    color: black;
+    font-family: var(--Playfair)
 }
 
 /* header */
@@ -144,10 +146,117 @@ header{
     cursor: pointer;
 }
 /* home */
-.home{
+.home {
     background: #f0bebe;
-    padding: 4.5rem 0 ;
+    padding: 4.5rem 0;
 }
+
+.home-text{
+    
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.home-title h2{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.home p{
+    color: black;
+}
+
+.home-text p{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+}
+.home-content{
+    margin: .5rem 0;
+}
+
+.home-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+
+.home-img{
+    position: relative;
+    overflow: hidden;
+    width:fit-content;
+    height: fit-content;
+}
+
+.home-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+}
+
+.home-img img{
+    transition: all 0.5 ease;
+}
+
+.home-item:hover img{
+    transform: scale(1.2);
+
+}
+
+.home-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    background: #df5d5d;
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+
+.home-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight:700;
+    font-size: 1.1rem;
+
+}
+
+.home-title{
+    padding: .5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.home-title a{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+
+   
+}
+
+
 
 
 /* recipies*/
@@ -171,9 +280,8 @@ header{
 .title p{
     text-transform: uppercase;
     padding: 0.6rem 0;
-    font-weight: bold;
+    font-weight: bold
 }
-
 .recipies-content{
     margin: .5rem 0;
 }
@@ -186,6 +294,8 @@ header{
 .recipies-img{
     position: relative;
     overflow: hidden;
+    width:fit-content;
+    height: fit-content;
 }
 
 .recipies-img::after{
@@ -237,7 +347,6 @@ header{
 }
 
 .recipies-title a{
-    color: var(--dark);
     text-decoration: none;
     display: inline-block;
     text-transform: capitalize;
@@ -436,6 +545,52 @@ header{
 }
 
 .paneer-text p{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+}
+
+/* churro */
+
+.churro {
+    background: #f0bebe;
+    padding: 4.5rem 0;
+}
+
+.churro-text{
+    
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.churro-title h2{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.churro-title h4{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.churro p{
+    color: black;
+}
+
+.churro-text p{
     text-decoration: none;
     display: inline-block;
     text-transform: capitalize;
@@ -687,6 +842,16 @@ footer{
         column-gap: 1rem;
         align-items: center;
     }
+    .churro-content img{
+        width: 150px;
+        height: 150px;
+    }
+    .churro-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
 
 }
 
@@ -751,6 +916,16 @@ footer{
         column-gap: 1rem;
         align-items: center;
     }
+    .churro-content img{
+        width: 350px;
+        height: 350px;
+    }
+    .churro-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
 
     
 }
@@ -810,6 +985,17 @@ footer{
         column-gap: 1rem;
         align-items: center;
     }
+    .churro-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .churro-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
     
 }
 
@@ -856,6 +1042,17 @@ footer{
         
     }
     .paneer-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .churro-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .churro-content {
         display:flexbox;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1rem;
