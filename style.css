@@ -32,7 +32,7 @@ img{
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 1.2rem;
-    color: rgb(255, 255, 255);
+    color: rgb(17, 12, 12);
     font-family: var(--Playfair)
 }
 
@@ -108,15 +108,16 @@ header{
 
 .banner p{
     padding: 1rem 0 2rem 0;
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     text-transform: capitalize;
-    font-family: var(--Roboto);
-    font-weight: 300;
+    font-family: var(--Patrick);
+    font-weight: bolder;
+    font-weight: 400;
     word-spacing: 2px;
 }
 
 .banner form{
-    background: #fff;
+    background: rgb(24, 17, 17);
     border-radius: 2rem;
     padding: 0.6rem 1rem;
     display: flex;
