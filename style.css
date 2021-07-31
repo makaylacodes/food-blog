@@ -146,54 +146,24 @@ header{
     cursor: pointer;
 }
 /* home */
-.home {
+.home{
     background: #f0bebe;
     padding: 4.5rem 0;
-}
-
-.home-text{
-    
-    margin: 2.2rem 0;
-    padding: 0 1rem;
-}
-
-.home-title h2{
-    font-family: var(--Patrick);
-    color: black;
-    padding: 1rem 0;
-    font-size: 3rem;
-    font-weight: 500;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.home p{
-    color: black;
-}
-
-.home-text p{
-    text-decoration: none;
-    display: inline-block;
-    text-transform: capitalize;
-    font-size: x-large;
-    font-weight:bold;
-    color: rgb(3, 3, 3);
-    font-family: var(--Patrick);
 }
 .home-content{
     margin: .5rem 0;
 }
-
 .home-item{
     cursor: pointer;
     margin: 1.5rem 0;
 }
-
 .home-img{
-    position: relative;
-    overflow: hidden;
-    width:fit-content;
-    height: fit-content;
+   
+        position: relative;
+        overflow: hidden;
+        width:200px;
+        height: 200px;
+
 }
 
 .home-img::after{
@@ -205,16 +175,49 @@ header{
     height: 100%;
     background: rgba(0,0,0,0.3);
 }
-
 .home-img img{
     transition: all 0.5 ease;
 }
+
+.home-title{
+    padding: .5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.home-title h2{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+}
+
+
 
 .home-item:hover img{
     transform: scale(1.2);
 
 }
+.home-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight:700;
+    font-size: 1.1rem;
 
+}
+
+.home-item:hover img{
+    transform: scale(1.2);
+
+} 
 .home-img span:first-of-type{
     position: absolute;
     z-index: 1;
@@ -236,31 +239,35 @@ header{
 
 }
 
-.home-title{
-    padding: .5rem;
-    font-size: 1.2rem;
-    text-align: center;
-    width: 60%;
-    margin: 0 auto;
-}
 
-.home-title a{
-    text-decoration: none;
-    display: inline-block;
-    text-transform: capitalize;
-    font-size: x-large;
-    font-weight:bold;
-    color: rgb(3, 3, 3);
+.home-title h2{
     font-family: var(--Patrick);
+    padding: 1rem 0;
+    font-size: 1;
+    font-weight: 500;
+}
 
-   
+.home-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background:#df5d5d;
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+
+}
+
+.home a:hover{
+    background: var(--exDark);
 }
 
 
 
-
-/* recipies*/
-.recipies{
+/* recipe*/
+.recipe{
     background: #f0bebe;
     padding: 4.5rem 0 ;
 }
@@ -282,23 +289,23 @@ header{
     padding: 0.6rem 0;
     font-weight: bold
 }
-.recipies-content{
+.recipe-content{
     margin: .5rem 0;
 }
 
-.recipies-item{
+.recipe-item{
     cursor: pointer;
     margin: 1.5rem 0;
 }
 
-.recipies-img{
+.recipe-img{
     position: relative;
     overflow: hidden;
     width:fit-content;
     height: fit-content;
 }
 
-.recipies-img::after{
+.recipe-img::after{
     position: absolute;
     content: "";
     top: 0;
@@ -308,16 +315,16 @@ header{
     background: rgba(0,0,0,0.3);
 }
 
-.recipies-img img{
+.recipe-img img{
     transition: all 0.5 ease;
 }
 
-.recipies-item:hover img{
+.recipe-item:hover img{
     transform: scale(1.2);
 
 }
 
-.recipies-img span:first-of-type{
+.recipe-img span:first-of-type{
     position: absolute;
     z-index: 1;
     top: 10px;
@@ -327,7 +334,7 @@ header{
     padding: 0.25rem 1rem;
 }
 
-.recipies-img span:last-of-type{
+.recipe-img span:last-of-type{
     position: absolute;
     z-index: 1;
     bottom: 10px;
@@ -338,7 +345,7 @@ header{
 
 }
 
-.recipies-title{
+.recipe-title{
     padding: .5rem;
     font-size: 1.2rem;
     text-align: center;
@@ -346,7 +353,7 @@ header{
     margin: 0 auto;
 }
 
-.recipies-title a{
+.recipe-title a{
     text-decoration: none;
     display: inline-block;
     text-transform: capitalize;
@@ -355,15 +362,6 @@ header{
     color: rgb(3, 3, 3);
     font-family: var(--Patrick);
 
-   /* font-family: var(--Roboto);
-    font-size: 1.1rem;
-    text-decoration: none;
-    color: var(--dark);
-    display: inline-block;
-    background:#df5d5d;
-    color: #fff;
-    padding: 0.55rem 1.2rem;
-    transition: all 0.5s ease; */
 }
 
 
@@ -553,6 +551,276 @@ header{
     color: rgb(3, 3, 3);
     font-family: var(--Patrick);
 }
+
+/* cloud */
+.cloud {
+    background: #f0bebe;
+    padding: 4.5rem 0;
+}
+
+.cloud-text{
+    
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.cloud-title h2{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.cloud-title h4{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.cloud p{
+    color: black;
+}
+
+.cloud-text p{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+}
+
+/* banana */
+.banana {
+    background: #f0bebe;
+    padding: 4.5rem 0;
+}
+
+.banana-text{
+    
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.banana-title h2{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.banana-title h4{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.banana p{
+    color: black;
+}
+
+.banana-text p{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+}
+
+/* brulee */
+.brulee {
+    background: #f0bebe;
+    padding: 4.5rem 0;
+}
+
+.brulee-text{
+    
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.brulee-title h2{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.brulee-title h4{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.brulee p{
+    color: black;
+}
+
+.brulee-text p{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+}
+
+/* phyllo */
+.phyllo {
+    background: #f0bebe;
+    padding: 4.5rem 0;
+}
+
+.phyllo{
+    
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.phyllo h2{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.phyllo h4{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.phyllo p{
+    color: black;
+}
+
+.phyllo p{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+}
+/* farmers */
+.farmers {
+    background: #f0bebe;
+    padding: 4.5rem 0;
+}
+
+.farmers-text{
+    
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.farmers-title h2{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.farmers-title h4{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.farmers p{
+    color: black;
+}
+
+.farmers-text p{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+}
+
+/* dalgona */
+.dalgona {
+    background: #f0bebe;
+    padding: 4.5rem 0;
+}
+
+.dalgona-text{
+    
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+
+.dalgona-title h2{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 3rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.dalgona-title h4{
+    font-family: var(--Patrick);
+    color: black;
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.dalgona p{
+    color: black;
+}
+
+.dalgona-text p{
+    text-decoration: none;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight:bold;
+    color: rgb(3, 3, 3);
+    font-family: var(--Patrick);
+}
+
 
 /* churro */
 
@@ -852,6 +1120,36 @@ footer{
         column-gap: 1rem;
         align-items: center;
     }
+    .home-content img{
+        width: 250px;
+        height: 350px;
+    }
+    .home-content{
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .cloud-content img{
+        width: 250px;
+        height: 350px;
+    }
+    .cloud-content{
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .dalgona-content img{
+        width: 250px;
+        height: 350px;
+    }
+    .dalgona-content{
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
 
 }
 
@@ -864,12 +1162,12 @@ footer{
     .search-input{
         padding: 0.8rem 0;
     }
-    .recipies-content{
+    .recipe-content{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 2rem; 
     }
-    .recipies-item{
+    .recipe-item{
         margin: 0;
     }
     .blog-content{
@@ -911,6 +1209,77 @@ footer{
         height: 350px;
     }
     .paneer-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .home-content img{
+        width: 350px;
+        height: 350px;
+    }
+    .home-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .dalgona-content img{
+        width: 350px;
+        height: 350px;
+    }
+    .dalgona-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .cloud-content img{
+        width: 350px;
+        height: 350px;
+    }
+    .cloud-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .banana img{
+        width: 350px;
+        height: 350px;
+    }
+    .banana-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+
+    .brulee-content img{
+        width: 350px;
+        height: 350px;
+    }
+    .brulee-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .farmers-content img{
+        width: 350px;
+        height: 350px;
+    }
+    .farmers-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .phyllo-content img{
+        width: 350px;
+        height: 350px;
+    }
+    .phyllo-content {
         display:flexbox;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1rem;
@@ -985,6 +1354,73 @@ footer{
         column-gap: 1rem;
         align-items: center;
     }
+    .home-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .home-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .dalgona-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .dalgona-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+
+    .banana-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .banana-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .brulee-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .brulee-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .farmers-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .farmers-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .phyllo-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .phyllo-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
     .churro-content img{
         width: 350px;
         height: 350px;
@@ -1001,7 +1437,7 @@ footer{
 
 @media screen and (min-width: 1200px){
 
-    .recipies-content{
+    .recipe-content{
         grid-template-columns: repeat(3, 1fr);
     }
     .kimchi-content img{
@@ -1042,6 +1478,83 @@ footer{
         
     }
     .paneer-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .home-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .home-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .cloud-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .cloud-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .banana-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .banana-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .brulee-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .brulee-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .farmers-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .farmers-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .phyllo-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .phyllo-content {
+        display:flexbox;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1rem;
+        align-items: center;
+    }
+    .dalgona-content img{
+        width: 350px;
+        height: 350px;
+        
+    }
+    .dalgona-content {
         display:flexbox;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 1rem;
