@@ -999,16 +999,23 @@ header{
     background: #f0bebe;
     padding: 4.5rem 0;
 }
+.title .about-content p{
+    color: black;
+    font-weight: bold;
+    font-family: var(--Patrick);
+}
 
 .about-text{
     
     margin: 2.2rem 0;
     padding: 0 1rem;
+    color: black;
 }
-.about-text > p{
+.about-text p{
     font-size: 1.1rem;
     padding: 0.6rem 0;
     opacity: 0.8;
+    color: black;
     font-weight: bold;
 }
 /* footer */
