@@ -949,10 +949,11 @@ header{
 
 
 .blog-title h2{
-    font-family: var(--Playfair);
+    font-family: var(--Patrick);
     padding: 1rem 0;
     font-size: 1.65;
     font-weight: 500;
+    font-weight: bold;
 }
 
 /*.blog-text span{
@@ -999,23 +1000,19 @@ header{
     background: #f0bebe;
     padding: 4.5rem 0;
 }
-.title .about-content p{
+.title{
     color: black;
     font-weight: bold;
     font-family: var(--Patrick);
 }
 
-.about-text{
-    
-    margin: 2.2rem 0;
-    padding: 0 1rem;
-    color: black;
-}
-.about-text p{
-    font-size: 1.1rem;
+
+.about-content .about-text p{
+    font-size: 1.3rem;
     padding: 0.6rem 0;
     opacity: 0.8;
     color: black;
+    font-family: var(--Patrick);
     font-weight: bold;
 }
 /* footer */
