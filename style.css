@@ -1,11 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 :root{
     --Playfair: 'Playfair Display', serif;
     --Quicksand: 'Quicksand', sans-serif;
     --Roboto: 'Roboto', sans-serif;
-    --Indie: 'Indie Flower', cursive;
     --dark: #3c393d;
     --exDark: #2b2b2b; 
 
@@ -109,7 +108,7 @@ header{
     padding: 1rem 0 2rem 0;
     font-size: 1.9rem;
     text-transform: capitalize;
-    font-family: var(--Indie);
+    font-family: var(--Playfair);
     font-weight: bolder;
     font-weight: 400;
     word-spacing: 2px;
@@ -123,28 +122,8 @@ header{
     justify-content: space-between;
 }
 
-.search-input{
-    font-family: var(--Roboto);
-    font-size: 1.1rem;
-    width: 100%;
-    outline: 0;
-    padding: 0.6rem 0;
-    border: none;
-}
 
-.search-input::placeholder{
-    text-transform: capitalize;
-}
 
-.search-btn{
-    width: 40px;
-    font-size: 1.1rem;
-    color: var(--dark);
-    border: none;
-    background: transparent;
-    outline: 0;
-    cursor: pointer;
-}
 /* home */
 .home{
     background: #f0bebe;
@@ -221,7 +200,7 @@ header{
 
 
 .home-title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     padding: 1rem 0;
     font-size: 1.65;
     font-weight: 500;
@@ -235,7 +214,7 @@ header{
 }*/
 
 .home-text h2{
-    font-family: var(--Playfair);
+    font-family: var(--Roboto);
     padding: 1rem 0;
     font-size: 1.65;
     font-weight: 500;
@@ -279,7 +258,7 @@ header{
 }
 
 .title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     text-decoration: underline;
     font-size: 2.4rem;
     color: black;
@@ -362,7 +341,7 @@ header{
     font-size: x-large;
     font-weight:bold;
     color: rgb(3, 3, 3);
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 
 }
 
@@ -383,7 +362,7 @@ header{
 }
 
 .kimchi-title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 3rem;
@@ -399,7 +378,7 @@ header{
     font-size: x-large;
     font-weight:bold;
     color: rgb(3, 3, 3);
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 }
 
 /* samgyeopsal */
@@ -415,7 +394,7 @@ header{
 }
 
 .samgyeopsal-title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 3rem;
@@ -434,7 +413,7 @@ header{
     font-size: x-large;
     font-weight:bold;
     color: rgb(3, 3, 3);
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 }
 
 
@@ -451,7 +430,7 @@ header{
 }
 
 .bokkeumbap-title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 3rem;
@@ -470,7 +449,7 @@ header{
     font-size: x-large;
     font-weight:bold;
     color: rgb(3, 3, 3);
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 }
 
 /*onepot*/
@@ -487,7 +466,7 @@ header{
 }
 
 .onepot-title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 3rem;
@@ -506,7 +485,7 @@ header{
     font-size: x-large;
     font-weight:bold;
     color: rgb(3, 3, 3);
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 }
 
 /* paneer */
@@ -522,7 +501,7 @@ header{
 }
 
 .paneer-title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 3rem;
@@ -532,7 +511,7 @@ header{
 }
 
 .paneer-title h4{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 2.5rem;
@@ -551,7 +530,7 @@ header{
     font-size: x-large;
     font-weight:bold;
     color: rgb(3, 3, 3);
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 }
 
 /* cloud */
@@ -567,7 +546,7 @@ header{
 }
 
 .cloud-title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 3rem;
@@ -577,7 +556,7 @@ header{
 }
 
 .cloud-title h4{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 2.5rem;
@@ -596,7 +575,7 @@ header{
     font-size: x-large;
     font-weight:bold;
     color: rgb(3, 3, 3);
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 }
 
 /* banana */
@@ -612,7 +591,7 @@ header{
 }
 
 .banana-title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 3rem;
@@ -622,7 +601,7 @@ header{
 }
 
 .banana-title h4{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 2.5rem;
@@ -641,7 +620,7 @@ header{
     font-size: x-large;
     font-weight:bold;
     color: rgb(3, 3, 3);
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 }
 
 /* brulee */
@@ -657,7 +636,7 @@ header{
 }
 
 .brulee-title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 3rem;
@@ -667,7 +646,7 @@ header{
 }
 
 .brulee-title h4{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 2.5rem;
@@ -686,7 +665,7 @@ header{
     font-size: x-large;
     font-weight:bold;
     color: rgb(3, 3, 3);
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 }
 
 /* phyllo */
@@ -702,7 +681,7 @@ header{
 }
 
 .phyllo h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 3rem;
@@ -712,7 +691,7 @@ header{
 }
 
 .phyllo h4{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 2.5rem;
@@ -731,7 +710,7 @@ header{
     font-size: x-large;
     font-weight:bold;
     color: rgb(3, 3, 3);
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 }
 /* farmers */
 .farmers {
@@ -746,7 +725,7 @@ header{
 }
 
 .farmers-title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 3rem;
@@ -756,7 +735,7 @@ header{
 }
 
 .farmers-title h4{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 2.5rem;
@@ -775,7 +754,7 @@ header{
     font-size: x-large;
     font-weight:bold;
     color: rgb(3, 3, 3);
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 }
 
 /* dalgona */
@@ -791,7 +770,7 @@ header{
 }
 
 .dalgona-title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 3rem;
@@ -801,7 +780,7 @@ header{
 }
 
 .dalgona-title h4{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 2.5rem;
@@ -820,7 +799,7 @@ header{
     font-size: x-large;
     font-weight:bold;
     color: rgb(3, 3, 3);
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 }
 
 
@@ -838,7 +817,7 @@ header{
 }
 
 .churro-title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 3rem;
@@ -848,7 +827,7 @@ header{
 }
 
 .churro-title h4{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     color: black;
     padding: 1rem 0;
     font-size: 2.5rem;
@@ -867,7 +846,7 @@ header{
     font-size: x-large;
     font-weight:bold;
     color: rgb(3, 3, 3);
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 }
 
 
@@ -948,7 +927,7 @@ header{
 
 
 .blog-title h2{
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     padding: 1rem 0;
     font-size: 1.65;
     font-weight: 500;
@@ -962,7 +941,7 @@ header{
 }*/
 
 .blog-text h2{
-    font-family: var(--Playfair);
+    font-family: var(--Roboto);
     padding: 1rem 0;
     font-size: 1.65;
     font-weight: 500;
@@ -1002,7 +981,7 @@ header{
 .title{
     color: black;
     font-weight: bold;
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
 }
 
 
@@ -1011,7 +990,7 @@ header{
     padding: 0.6rem 0;
     opacity: 0.8;
     color: black;
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     font-weight: bold;
 }
 /* footer */
@@ -1052,7 +1031,7 @@ footer{
 .footer span{
     margin-top: 1rem;
     display: block;
-    font-family: var(--Indie);
+    font-family: var(--Roboto);
     letter-spacing: 2px;
 }
 
